@@ -1,7 +1,7 @@
 # Computer Organization
 ## Hw1
 ### 實驗結果圖:
-![](https://i.imgur.com/MZTKIGJ.png)
+<img src="./image/image_hw1_figure1.png" alt="Editor" width="500">
 
 
 ### 程式運作流程:
