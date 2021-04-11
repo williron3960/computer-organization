@@ -26,7 +26,7 @@ OS : Mac OSX
 * GTKwave圖形模擬
 GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。所以要將traffic_light_tb.v內的Wave部分改成output .vcd檔案，才能正常執行程式。
 如下圖：
-<img src="./image/image_hw1_figure2.png" alt="Editor" width="400">
+<img src="./image/image_hw1_figure2.png" alt="Editor" width="250">
 
 
 再使用GTKwave ,open new tab 選擇目標vcd檔案，就可以成功打開上圖了，之後就是開頭的實驗結果圖。
@@ -39,7 +39,7 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 ## Hw2
 ### Program 1 (Find the average)
 #### 實驗結果圖：
-<img src="./image/image_hw2_figure1.png" alt="Editor" width="400">
+<img src="./image/image_hw2_figure1.png" alt="Editor" width="250">
 
 #### 程式運作流程：
 首先下載Java跟MARs到MACOS上也很順利沒有問題，環境安裝的部分很順利完成。再來，我主要撰寫的概念是，先將三個數字全都加起來至t1暫存器，並且設定t2暫時儲存結果，然後藉由LOOP的方式總值每扣一次3就把t2加一，來達到除以3的效果。t3則是我用來判斷總值是否被扣至負值，若已扣至負值，則beq結果為不跳結束迴圈，最後得到的值-1(因為多算一次負值)就是答案。
