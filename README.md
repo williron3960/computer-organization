@@ -52,7 +52,7 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 
 ### Program 2 (Pascal)
 #### 實驗結果圖：
-![](https://i.imgur.com/DOcddn2.png=300x400)
+![](https://i.imgur.com/DOcddn2.png = 300x400)
 
 
 #### 程式運作流程：
