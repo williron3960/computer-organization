@@ -26,7 +26,7 @@ OS : Mac OSX
 * GTKwave圖形模擬
 GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。所以要將traffic_light_tb.v內的Wave部分改成output .vcd檔案，才能正常執行程式。
 如下圖：
-<img src="./image/image_hw1_figure2.png" alt="Editor" width="250">
+<img src="./image/image_hw1_figure2.png" alt="Editor" width="400">
 
 
 再使用GTKwave ,open new tab 選擇目標vcd檔案，就可以成功打開上圖了，之後就是開頭的實驗結果圖。
@@ -49,7 +49,7 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 
 ### Program 2 (Pascal)
 #### 實驗結果圖：
-<img src="./image/image_hw2_figure2.png" alt="Editor" width="400">
+<img src="./image/image_hw2_figure2.png" alt="Editor" width="250">
 
 #### 程式運作流程：
 我主要撰寫的概念是，pascal function主要用來做判斷是否符合終止條件，也是就(m == n || m == 0)，若符合終止條件則beq會直接跳到result進行v0++的運算，若不符合終止條件則會強制jump到我自行定義的L1 function ，L1 function會對$a0以及$a1進行運算後再回call pascal function去判斷是否符合終止條件，若不符合繼續call pascal function，結果來說call pascal function其中有252次符合終止條件，並且得到0x000000fc的結果。
