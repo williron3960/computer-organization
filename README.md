@@ -41,7 +41,7 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 ## Hw2
 ### Program 1 (Find the average)
 #### 實驗結果圖：
-![](https://i.imgur.com/mBMzlTC.png =300x400)
+![](https://i.imgur.com/mBMzlTC.png=300x400)
 
 
 #### 程式運作流程：
@@ -52,7 +52,7 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 
 ### Program 2 (Pascal)
 #### 實驗結果圖：
-![](https://i.imgur.com/DOcddn2.png =300x400)
+![](https://i.imgur.com/DOcddn2.png=300x400)
 
 
 #### 程式運作流程：
