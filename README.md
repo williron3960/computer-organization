@@ -25,7 +25,8 @@ OS : Mac OSX
 
 * GTKwave圖形模擬
 GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。所以要將traffic_light_tb.v內的Wave部分改成output .vcd檔案，才能正常執行程式。
-如下圖：<img src="./image/image_hw1_figure2.png" alt="Editor" width="400">
+如下圖：
+<img src="./image/image_hw1_figure2.png" alt="Editor" width="400">
 
 
 再使用GTKwave ,open new tab 選擇目標vcd檔案，就可以成功打開上圖了，之後就是開頭的實驗結果圖。
@@ -34,9 +35,6 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 第一個遇到的問題就是modelsim不支援Mac OSX，我馬上去找了替代方案，最開始是考慮用VM的方式安裝ubuntu來進行作業，但因為VM實在是太heavy了我真的不喜歡。
 後來想說可以用實驗室的server來進行作業，但因為server沒有GUI，而這次的波形模擬需要有GUI的部分會比較好處理。
 所以最後才找到了可以使用iverilog+GTKwave來進行作業，再稍微做一些DEMO練習過後，就順利完成了作業，但因為前面做了一些嘗試的關係導致作業較晚完成，整體來說學到很多，很感謝老師給的這個作業。
-
-
-
 
 ## Hw2
 ### Program 1 (Find the average)
@@ -58,4 +56,3 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 
 #### 心得：
 這題相較第一題來說較為進階，相較上題不用特別從stack裡面load word $a0跟$a1 出來復原，這題我主要有寫一個L1 function 進行$a0跟$a1運算後回call，所以有去進行嚴謹的lw $a0跟$a1復原，並且因為有遞迴的概念所以要另外寫了一個L1function，讓我對組合語言又更為熟悉了。
-
