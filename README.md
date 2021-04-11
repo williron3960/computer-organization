@@ -55,4 +55,4 @@ GTKwave沒有辦法讀取.fsdb波形圖檔，他主要是以.vcd檔案讀取。�
 我主要撰寫的概念是，pascal function主要用來做判斷是否符合終止條件，也是就(m == n || m == 0)，若符合終止條件則beq會直接跳到result進行v0++的運算，若不符合終止條件則會強制jump到我自行定義的L1 function ，L1 function會對$a0以及$a1進行運算後再回call pascal function去判斷是否符合終止條件，若不符合繼續call pascal function，結果來說call pascal function其中有252次符合終止條件，並且得到0x000000fc的結果。
 
 #### 心得：
-這題相較第一題來說較為進階，相較上題不用特別從stack裡面load word $a0跟$a1 出來復原，這題我主要有寫一個L1 function 進行$a0跟$a1運算後回call，所以有去進行嚴謹的lw $a0跟$a1復原，並且因為有遞迴的概念所以要另外寫了一個L1function，讓我對組合語言又更為熟悉了。
+這題相較第一題來說較為進階，相較上題不用特別從stack裡面load word $a0跟$a1 出來復原，這題我主要有寫一個L1 function 進行$a0跟$a1運算後回call，所以有去進行嚴謹的lw $a0跟$a1復原，並且因為有遞迴的概念所以要另外寫了一個L1 function，讓我對組合語言又更為熟悉了。
