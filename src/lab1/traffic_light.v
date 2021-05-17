@@ -7,7 +7,7 @@ output reg G;
 output reg Y;
 
 
-reg [2:0] state; // 7 states 
+reg [2:0] state; // 7 states
 // num : state   cycles
 // 000 : Green 1024cycles
 // 001 : None  128cycles
@@ -19,8 +19,8 @@ reg [2:0] state; // 7 states
 
 reg [10:0] cycle; // max 2047 cycles but we need 1024, so using 11 bit for this reg
 
-always@(posedge clk or posedge rst) begin // 
-  
+always@(posedge clk or posedge rst) begin //
+
   if (rst) begin
       R <= 0;
       G <= 1;
@@ -59,11 +59,11 @@ always@(posedge clk or posedge rst) begin //
       G <= 0;
       Y <= 0;
       if (cycle == 11'd127) begin
-        state <= 3'd2;
+        state <= 3 'd2;
         cycle <= 11'd0;
       end
     end
-    
+
     else if (state == 3'd2) begin //010 for Green 128 cycles
       R <= 0;
       G <= 1;
@@ -115,6 +115,6 @@ always@(posedge clk or posedge rst) begin //
     end
 
   end
-end  
-  
+end
+
 endmodule
