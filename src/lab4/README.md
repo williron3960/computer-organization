@@ -16,8 +16,13 @@ Number of blocks = 第一行的cache size/ 第二行的block size
 因為在trace2有練習慣LRU了，我選擇了FIFO來練習看看不同policy透過linked list的方式我時做了一個queue 然後第一個進來的值只要沒有hit(miss)就會不斷的在linked list當中往右推，在這個過程中即使hit也不會改變任何置換順序，主要是linked list實作queue的方面下了一點功夫。
 ### Q7. Run trace2.txt, trace3.txt and then makefile to get the miss rate and put it in your report.
 trace2 miss rate = 0.000597
-<img src="../../image/image_hw4_figure1.png" alt="Editor" width="250">
+
+<img src="../../image/image_hw4_figure1.png" alt="Editor" width="500">
+
 Trace3 miss rate = 0.000076
-<img src="../../image/image_hw4_figure2.png" alt="Editor" width="250">
+
+<img src="../../image/image_hw4_figure2.png" alt="Editor" width="500">
+
 Trace4 miss rate = 0.220925
-<img src="../../image/image_hw4_figure3.png" alt="Editor" width="250">
+
+<img src="../../image/image_hw4_figure3.png" alt="Editor" width="500">
