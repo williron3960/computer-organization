@@ -2,7 +2,7 @@
 ## 實驗結果圖:
 (波形圖及模擬完成截圖)
 <img src="../../image/image_hw3_figure1.png" alt="Editor" width="250">
-<img src="../../image/image_hw4_figure2.png" alt="Editor" width="250">
+<img src="../../image/image_hw3_figure2.png" alt="Editor" width="250">
 
 ## 程式運作流程:
 (簡單說明波形變化的意義)
